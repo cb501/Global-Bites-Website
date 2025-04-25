@@ -31,104 +31,119 @@
         <header>
             <!-- place navbar here -->
              <!-- Nav tabs -->
-             <ul
-                class="nav nav-tabs"
-                id="navId"
-                role="tablist"
-             >
-                <li class="nav-item">
-                    <a
-                        href="#tab1Id"
-                        class="nav-link active"
-                        data-bs-toggle="tab"
-                        aria-current="page"
-                        >Global Bites</a
-                    >
-                </li>
-                <li class="nav-item dropdown">
-                    <a
-                        class="nav-link dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Dropdown</a
-                    >
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#tab2Id">Action</a>
-                        <a class="dropdown-item" href="#tab3Id">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#tab4Id">Action</a>
+                <div class="container1">
+                    <div class="topnav">
+                        <b href="global-bites.html"><img src="images/green-logo.png" width="160"></b>
+                        <a href="#news">Gallery</a>
+                        <a href="about-us.html">About Us</a>
+                        <a href="#about">Map</a>
+                        <a href="#about">Dish of the Week</a>
+                
                     </div>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a href="#tab5Id" class="nav-link" data-bs-toggle="tab"
-                        >Another link TESTER</a
-                    >
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a href="#" class="nav-link disabled" data-bs-toggle="tab"
-                        >Disabled</a
-                    >
-                </li>
-             </ul>
+                </div>
+                
+        
+                <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
+                <script>
+                    var triggerEl = document.querySelector("#navId a");
+                    bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
+                </script>
 
-             <!-- Tab panes -->
-             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
+            </header>
+            <main>
+
+                    <div class="hero-section text-center">
+
+                        <div class="col-lg-6 mx-auto">
+
+                            <h1 class="display-5 fw-bold">Experience Culture Through Food</h1>
+                            <p class="lead mb-4">
+                                Craving global flavors without leaving your kitchen? Discover dishes from every corner of the world, no passport required. Let your next culinary adventure start right here.
+                            </p>
+                            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Explore Our Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class = "divider">
+
+                    <div class="bg-img">
+                        
+                    
+                    <h1 class ="header">Popular Dishes</h1>
+
+                    <div class="container">
+                        <div class="container">
+                            <div class="box-1">
+                                <img class="p1" src="images/p1dish.png" alt="popdish">
+                                <p class="p1boxhead">Omakase</p>
+                                <p class="p1boxtext">Three sushi rolls packed with bold flavours</p>
+                                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">See Recipe</button>
+                                </div>
+                            </div>
+                            <div class="box-1">
+                                <img class="p2" src="images/p2dish.png" alt="popdish">
+                                <p class="boxhead">Seered Salmon</p>
+                                <p class="p2boxtext">Cripsy outside, tener inside, with citrus soy glaze</p>
+                                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">See Recipe</button>
+                                </div>
+                            </div>
+                            <div class="box-1">
+                                <img class="p3" src="images/p3dish.png" alt="popdish">
+                                <p class="p3boxhead">Amano Shrimp</p>
+                                <p class="p3boxtext">Sweet, lightly chilled, server with soy and wasabi</p>
+                                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">See Recipe</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="box-1">
+                                <p class="boxtext">At Global Bites, we believe food is the most delicious way to explore culture. Our range of dishes spans continents—from the refined techniques of Japanese sushi and the bold flavors of Southeast Asian seafood, to the comforting spices of home-style Chinese dumplings. Each recipe we share is more than just a meal—it's a window into the traditions, ingredients, and stories that make every culture unique. Whether you're trying something new or reconnecting with a familiar favorite, our goal is to inspire curiosity and connection through the universal language of food.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="container">
+                            <div class="box-1">
+                                <div class="box-1d">
+                                    <img class="dishoftheweek" src="images/dishofweek.jpg" alt="Dish of the Week">
+                                    <div class="overlay">
+                                      <p class="overlay-title">Amano Shrimp</p>
+                                      <p class="overlay-subtitle">Dish of the Week</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                
+
+                    <br><br><br>
 
                 </div>
-                <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-                <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-                <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-                <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
-             </div>
+            </main>
+            <footer>
+                <!-- place footer here -->
+            </footer>
+            <!-- Bootstrap JavaScript Libraries -->
+            <script
+                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                crossorigin="anonymous"
+            ></script>
 
-             <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
-             <script>
-                var triggerEl = document.querySelector("#navId a");
-                bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
-             </script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+                integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+                crossorigin="anonymous"
+            ></script>
 
-        </header>
-        <main>
-
-            <div
-            class="hero-section text-center text-white d-flex align-items-center justify-content-center"
-            style="
-            background-image: url('https://via.placeholder.com/1920x600'); /* Replace with your image URL */
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
-        "
-        >
-        <div>
-            <h1 class="display-4">Welcome to Our Website</h1>
-            <p class="lead">This is a subheading for the hero section.</p>
-            <button type="button" class="btn btn-primary btn-lg">Get Started</button>
-        </div>
-    </div>
-
-
-<h1 class="heading">hello</h1>
-
-
-        </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
+        
     </body>
 </html>
