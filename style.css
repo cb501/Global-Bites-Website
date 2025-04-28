@@ -60,7 +60,7 @@ flex-wrap: wrap;
 
 /* Position the navbar container inside the image */
 .container1 {
-  position: fixed;
+  position: absolute;
   margin: 0px;
   top: 0;
   width: 100%;
@@ -69,38 +69,19 @@ flex-wrap: wrap;
 
 /* The navbar */
 .topnav {
-  overflow: hidden;
-  background-color: black;
-  opacity: 88%;
-  z-index: -1;
-  min-width: 100%;
-  left: 0;
-  top: 0;
-
-
+  position: fixed; /* Fix the navbar to the top of the viewport */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Make it span the full width of the viewport */
+  z-index: 9999; /* Ensure it stays on top of all other elements */
+  overflow: hidden; /* Prevent content from spilling out */
+  background-color: black; /* Keep the background color */
+  opacity: 88%; /* Maintain the opacity */
 }
 
 /* Navbar links */
 
-.topnav b {
-  float: left;
-  height: 100%;
-  display: flex;
-  align-items: center;   /* vertically center */
-  justify-content: center; /* horizontally center */
-  padding-left: 20px;
-  padding-top: 26px;
-  padding-bottom: 12px;
-  padding-right: 30px;
-  opacity: 100%;
-
-}
-
-.topnav b:hover {
-  background-color: #feece6;
-}
-
-.topnav a {
+.topnav a:not(.logo) {
   float: left;
   color: white;
   font-family: forma-djr-display, sans-serif;
@@ -111,6 +92,7 @@ flex-wrap: wrap;
   text-decoration: none;
   font-size: 17px;
   opacity: 100%;
+  z-index: 9999;
 
 }
 
@@ -119,6 +101,20 @@ flex-wrap: wrap;
   color: #ef4623;
 }
 
+.logo {
+  float: left;
+  height: 100%;
+  display: flex;
+  align-items: center;   /* vertically center */
+  justify-content: center; /* horizontally center */
+  padding-left: 20px;
+  padding-top: 26px;
+  padding-bottom: 12px;
+  padding-right: 30px;
+  opacity: 100%;
+  z-index: 9999;
+
+}
 
 .subtitle {
   color: #ef4623;
@@ -450,7 +446,7 @@ body {
   left: 0; /* Align to the left of the container */
   width: 100%; /* Cover the full width of the container */
   height: 0; /* Initially hidden (no height) */
-  background-color: rgba(181, 230, 201, 0.8); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
   display: flex; /* Use flexbox to align content */
   flex-direction: column; /* Stack text vertically */
   justify-content: flex-end; /* Align content to the bottom */
@@ -481,4 +477,47 @@ body {
 .box-1d:hover .overlay {
   height: 40%; /* Reveal the bottom 40% of the container */
   opacity: 1; /* Make the overlay visible */
+}
+
+
+.hero-section1 {
+  height: 70vh; /* Full viewport height */
+  background-image: url("images/hero1.jpg"); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center 65%; /* Adjust the image to focus on the top */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  color: white; /* Optional: Adjust text color for better contrast */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add text shadow for readability */
+}
+
+.scroll-container {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr)); /* Create columns for images */
+  grid-auto-rows: 20vw; /* Set a fixed height for each row */
+  grid-gap: 20px; /* Add spacing between images */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 20px; /* Add padding around the container */
+  white-space: normal; /* Allow wrapping for grid layout */
+  
+}
+
+.scroll-container img {
+  width: 100%; /* Make images fill their grid cells */
+  height: 100%; /* Make images fill their grid cells */
+  object-fit: cover; /* Ensure the images fill the container while maintaining their aspect ratio */
+  border-radius: 25px; /* Optional: Add rounded corners */
+  display: block; /* Ensure images behave as block elements */
+}
+
+.box-1g {
+  flex:  100px;
+  background-color: rgba(254, 236, 230, 0.5); /* Semi-transparent background */
+  border-radius: 25px;
+  display: block;
+  margin-top: 40px;
+
 }
