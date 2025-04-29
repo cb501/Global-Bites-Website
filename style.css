@@ -271,6 +271,7 @@ left: 16px;
 
 body {
   background-color: #19714d;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .header {
@@ -321,8 +322,8 @@ body {
 
 .boxtext {
   color: #ffffff;
-  font-family: forma-djr-display, sans-serif;
-  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
   font-style: normal;    
   font-size: 16pt;
   text-align: left;
@@ -335,8 +336,8 @@ body {
 
 .p2boxtext {
   color: #ffffff;
-  font-family: forma-djr-display, sans-serif;
-  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
   font-style: normal;    
   font-size: 16pt;
   text-align: left;
@@ -363,8 +364,8 @@ body {
 
 .p1boxtext {
   color: #ffffff;
-  font-family: forma-djr-display, sans-serif;
-  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
   font-style: normal;    
   font-size: 16pt;
   text-align: left;
@@ -392,8 +393,8 @@ body {
 
 .p3boxtext {
   color: #ffffff;
-  font-family: forma-djr-display, sans-serif;
-  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
   font-style: normal;    
   font-size: 16pt;
   text-align: left;
@@ -552,8 +553,8 @@ body {
 
 .boxtextg {
   color: #ffffff;
-  font-family: forma-djr-display, sans-serif;
-  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
   font-style: normal;    
   font-size: 16pt;
   text-align: left;
@@ -602,3 +603,13 @@ body {
   color: white; /* Optional: Adjust text color for better contrast */
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add text shadow for readability */
 }
+
+.map {
+  margin-right: 5%;
+  padding-right: 5%;
+  height: 80%;
+  width: 80%;
+  object-fit: scale-down;
+  scale: 0.9;
+}
+
