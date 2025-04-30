@@ -605,11 +605,29 @@ body {
 }
 
 .map {
-  margin-right: 5%;
-  padding-right: 5%;
-  height: 80%;
-  width: 80%;
-  object-fit: scale-down;
-  scale: 0.9;
+  height: 40vw; /* Set the height to 40% of the viewport width */
+  width: 100%; /* Ensure the image spans the full width of the container */
+  object-fit: cover; /* Make the image cover the container while maintaining its aspect ratio */
+  object-position: center; /* Center the image within the container */
+  margin: 0 auto; /* Center the map horizontally */
+  display: block; /* Ensure the map behaves as a block element */
+  border-radius: 15px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
+
+.hero-section4 {
+  height: 70vh; /* Full viewport height */
+  background-image: url("images/map.jpeg"); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center 70%; /* Adjust the image to focus on the top */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  color: white; /* Optional: Adjust text color for better contrast */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add text shadow for readability */
+}
